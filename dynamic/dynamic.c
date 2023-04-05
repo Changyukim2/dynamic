@@ -15,7 +15,7 @@ typedef struct {
 void init_stack(Stacktype* s) {
 
 	s->top = -1;
-	s->capacity = -1;
+	s->capacity = 1;
 	s->data = (element*)malloc(s->capacity * sizeof(element));
 
 }
@@ -64,7 +64,7 @@ int main(void) {
 			printf("반복수:%d  push %d\n", i, rand_num);
 		}
 		else {
-			printf("반복수: %d  pop %d\n", i, pop(&s));
+			printf("반복수: %d  pop %d\n", i, rand_num);
 		}
 	}
 }
